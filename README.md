@@ -1,1 +1,1 @@
-# C-exercies
+# C-exercices
