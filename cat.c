@@ -22,6 +22,7 @@ void print(char *array)
 int display(char *argv)
 {
     char buffer[30000];
+    int size = 0;
     int file = open(argv, O_RDONLY);
 
     if (file == -1) {
@@ -30,8 +31,8 @@ int display(char *argv)
         close(file);
         return (84);
     }
-    read(file, buffer, 30000);
-    write(1, &buffer, strlength(buffer));
+    size = read(file, buffer, 30000);
+    write(1, &buffer, size));
     close(file);
     return (0);
 }
