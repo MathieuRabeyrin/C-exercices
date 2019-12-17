@@ -1,4 +1,4 @@
-int strlength(char *str)
+int strlength(const char *str)
 {
     int index = 0;
 
